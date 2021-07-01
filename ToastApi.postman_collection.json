@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "a3be0ea5-c620-45f0-97f3-5e3aaa82364f",
+		"name": "ToastApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "place_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\":[\n        \"Vadapav\",\n        \"Samosa\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/place_order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"place_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/delete/60dc8ace6efa7710027ceb17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"60dc8ace6efa7710027ceb17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_name\":\"Ice-cream\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/update/60dc8291cd5f811772e75dd6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update",
+						"60dc8291cd5f811772e75dd6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n\n        \"item_name\": \"Vadapav\",\n        \"item_price\": 400,\n        \"item_discount\": 10\n    },\n    {\n        \"item_name\": \"Samosa\",\n        \"item_price\": 100,\n        \"item_discount\": 5\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view_place_order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/view_place_order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"view_place_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view_ongoing_order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/view_ongoing_order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"view_ongoing_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view_complete_order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/view_complete_order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"view_complete_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_table",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\":\"PersonDetails\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/create_table",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"create_table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_table",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_name\":\"PersonDetails\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/delete_table",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete_table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_order_status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"O\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/update_order_status/60dcadd9a82c3eca1e371f9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update_order_status",
+						"60dcadd9a82c3eca1e371f9c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
